@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { IProject } from './ProjectsSection'
+import { IProject } from './ProjectsSection';
+import myImageLoader from '../image-loader';
 
 export default function Project({ project, selected }: { project: IProject, selected: () => void }) {
 
@@ -8,7 +9,7 @@ export default function Project({ project, selected }: { project: IProject, sele
    
         <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-gray-700 relative">
-                <Image src={project.imageUrl} alt={`Project ${project.title}`} fill className="object-cover" />
+                <Image src={myImageLoader(project.imageUrl)} alt={`Project ${project.title}`} fill className="object-cover" />
             </div>
             <div className="p-4 sm:p-6">
                 <h3 className="text-base sm:text-lg font-semibold text-white mb-2">{project.title}</h3>
