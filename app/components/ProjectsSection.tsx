@@ -2,8 +2,8 @@ import Project from './Project';
 import { useState } from 'react';
 import { StaticImageData } from 'next/image';
 
-import stereonet from "../../public/stereonet.jpg";
-import analog2 from "../../public/analog2.png";
+import stereonet from "../../public/stereonet_mini.jpg";
+import analog from "../../public/analog.png";
 import map from "../../public/map.jpg";
 import blaster from "../../public/blaster.jpg";
 
@@ -49,7 +49,7 @@ export default function ProjectsSection() {
 					This approach involved identifying each character based on the number and location of segments, which is unique to each character. To test 
 					my results I manually identified the numerical values in each frame for a short section of video and comapred with the digital outputs,
 					showing that my approach had a 100% accuracy. This was a purely experimental project so there is no visual output to display.`,
-				image: analog2,
+				image: analog,
 				projectUrl: 'https://github.com/Michael-hello/analog_screen_reader',
 				selected: false
 			},

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import portrait from "../../public/portrait.jpg"
+import portrait from "../../public/portrait_mini.jpg";
 
 
 export default function HeroSection() {
