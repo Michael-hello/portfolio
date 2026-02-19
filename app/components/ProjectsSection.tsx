@@ -1,5 +1,11 @@
 import Project from './Project';
 import { useState } from 'react';
+import { StaticImageData } from 'next/image';
+
+import stereonet from "../../public/stereonet.jpg";
+import analog2 from "../../public/analog2.png";
+import map from "../../public/map.jpg";
+import blaster from "../../public/blaster.jpg";
 
 
 export interface IProject { 
@@ -10,7 +16,7 @@ export interface IProject {
 	description: string; 
 	//longer description of the project, only visible when the user clicks 'more info'
 	info: string; 
-	imageUrl: string; 
+	image: StaticImageData; 
 	projectUrl: string;
 	selected: boolean;
 };
@@ -27,7 +33,7 @@ export default function ProjectsSection() {
 				info: `This project involved experimenting with the THREE.js library to create an interactive stereonet in both 2D and 3D.
 					The stereonet can display planes or poles based on user inputted dip and strike (RH rule) values. I also used this project 
 					as a chance to experiment with building a UI using raw HTML rather than a frontend framework.`,
-				imageUrl: '/stereonet.jpg',
+				image: stereonet,
 				projectUrl: 'https://michael-hello.github.io/stereonet/',
 				selected: false
 			},
@@ -43,7 +49,7 @@ export default function ProjectsSection() {
 					This approach involved identifying each character based on the number and location of segments, which is unique to each character. To test 
 					my results I manually identified the numerical values in each frame for a short section of video and comapred with the digital outputs,
 					showing that my approach had a 100% accuracy. This was a purely experimental project so there is no visual output to display.`,
-				imageUrl: '/analog2.png',
+				image: analog2,
 				projectUrl: 'https://github.com/Michael-hello/analog_screen_reader',
 				selected: false
 			},
@@ -56,7 +62,7 @@ export default function ProjectsSection() {
 					The solution involved creating an android application that logs my location and then updates a single JSON file stored using JSON.bin, a free Restful 
 					JSON data store. The second part of the solution was to create a web visualiser that reads the JSON file and display the data on a map which can be seen by clicking the
 					"View Project" button.`,
-				imageUrl: '/map.jpg',
+				image: map,
 				projectUrl: 'https://michael-hello.github.io/react-app/',
 				selected: false
 			},
@@ -66,7 +72,7 @@ export default function ProjectsSection() {
 				description: 'A 2D survival game built with VueJS, SVG and TypeScript. WIP.',
 				info: `This project was a personal attempt to re-build a 2D survival game that was a favourite of mine as a child. The tech stack includes
 					VueJS, SVG and TypeScript. This project is still a work in progress but the core mechanics of the game are in place.`,
-				imageUrl: '/blaster.jpg',
+				image: blaster,
 				projectUrl: 'https://michael-hello.github.io/blaster/',
 				selected: false
 			}
