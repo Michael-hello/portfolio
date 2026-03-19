@@ -48,9 +48,10 @@ export default function ProjectsSection() {
 					values. One option was to train a machine learning model, however, due to time constraints I opted for a logic based approach.
 					This approach involved identifying each character based on the number and location of segments, which is unique to each character. To test 
 					my results I manually identified the numerical values in each frame for a short section of video and comapred with the digital outputs,
-					showing that my approach had a 100% accuracy. This was a purely experimental project so there is no visual output to display.`,
+					showing that my approach had a 100% accuracy where all segments could be correctly identified. The link is a youtube clip created using OpenCV
+					showing the original video and the processed results.`,
 				image: analog,
-				projectUrl: 'https://github.com/Michael-hello/analog_screen_reader',
+				projectUrl: 'https://youtu.be/wKVvwEeg1m8',
 				selected: false
 			},
 			{
@@ -90,7 +91,7 @@ export default function ProjectsSection() {
 	return (
 		<section className="py-12 sm:py-20">
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h2 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8 text-center">Featured Projects</h2>
+				<h2 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8 text-center">Personal Projects</h2>
 				<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
 					{projects.map((project) => (
 						<div key={project.key}>
