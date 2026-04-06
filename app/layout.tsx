@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'Michael - Developer Portfolio',
 		description: 'Passionate developer creating simple and effective solutions. Explore my projects and development approach.',
-		url: 'https://your-domain.com',
+		url: 'https://michael-jones.uk',
 		siteName: 'Michael - Portfolio',
 		images: [
 			{

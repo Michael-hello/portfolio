@@ -8,7 +8,9 @@ export default function Project({ project, selected }: { project: IProject, sele
    
         <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <div className="aspect-video bg-gray-700 relative">
-                <Image src={project.image} alt={`Project ${project.title}`} fill className="object-cover" />
+                <a href={project.projectUrl} target="_blank">
+                    <Image src={project.image} alt={`Project ${project.title}`} fill className="object-cover" />
+                </a>
             </div>
             <div className="p-4 sm:p-6">
                 <h3 className="text-base sm:text-lg font-semibold text-white mb-2">{project.title}</h3>
