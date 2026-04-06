@@ -9,13 +9,14 @@
 		"start": "next start",
 		"lint": "next lint",
 		"predeploy": "touch out/.nojekyll",
-    	"deploy": "gh-pages -d out --dotfiles"
+		"deploy": "gh-pages -d out --dotfiles"
 	},
 	"dependencies": {
 		"framer-motion": "^12.0.6",
 		"next": "15.1.6",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
+		"react-dom": "^19.0.0",
+		"react-ga4": "^3.0.1"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
