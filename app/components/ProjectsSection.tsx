@@ -6,6 +6,7 @@ import stereonet from "../../public/stereonet_mini.jpg";
 import analog from "../../public/analog.png";
 import map from "../../public/map.jpg";
 import blaster from "../../public/blaster.jpg";
+import fastLogo from "../../public/fast-api-logo.png";
 
 
 export interface IProject { 
@@ -69,6 +70,17 @@ export default function ProjectsSection() {
 			},
 			{
 				key: 4,
+				title: 'FastAPI app hosted on Render',
+				description: 'A FastAPI backend application hosted on Render.',
+				info: `This project involved building a FastAPI backend application using python to store and make retrievable location data created by the previous
+					android application. The data is stored in an SQL database, created and interfaced with SQLAlchemy. The link provides a schema of all of the API
+					endpoints. The backend is hosted on Render, a free hosting platform for web applications.`,
+				image: fastLogo,
+				projectUrl: 'https://python-backend-locations.onrender.com/docs#/',
+				selected: false
+			},
+			{
+				key: 5,
 				title: '2D survival game',
 				description: 'A 2D survival game built with VueJS, SVG and TypeScript. WIP.',
 				info: `This project was a personal attempt to re-build a 2D survival game that was a favourite of mine as a child. The tech stack includes
