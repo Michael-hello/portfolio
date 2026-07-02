@@ -7,6 +7,7 @@ import analog from "../../public/analog.png";
 import map from "../../public/map.jpg";
 import blaster from "../../public/blaster.jpg";
 import fastLogo from "../../public/fast-api-logo.png";
+import mapbox from "../../public/mapbox2.jpg";
 
 
 export interface IProject { 
@@ -27,6 +28,16 @@ export default function ProjectsSection() {
 
 	const [projects, setProjects] = useState<IProject[]>(
 		[
+			{
+				key: 0,
+				title: 'GIS webapp',
+				description: 'A GIS webapp built using mapbox and ReactJS to visualise and analyse geospatial data.',
+				info: `This project involved experimenting with mapbox and ReactJS to create a webapp that can visualise geospatial 
+				data as well as allow users to create markers and polygons. The link is a live version of the webapp hosted on AWS Amplify.`,
+				image: mapbox,
+				projectUrl: 'https://main.dlgtr7tp973dz.amplifyapp.com/',
+				selected: false
+			},
 			{
 				key: 1,
 				title: '3D Stereonet',
